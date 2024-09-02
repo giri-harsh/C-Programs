@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <conio.h>
+
+
+int main()
+{
+    int a;
+    int b;
+    printf("enter A");
+    scanf("%d",&a);
+    printf("enter B");
+    scanf("%d",&b);
+    if (a>b){
+        printf ("\n A>B");
+    }
+    else printf("\n B>A");
+    getch();
+
+    return 0;
+}
