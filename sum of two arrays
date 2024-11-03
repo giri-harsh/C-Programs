@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main(){
+    int n=5;
+    
+    int a[n],b[n];
+    for(int i=0;i<n;i++){
+        scanf("%d",&a[i]);
+        
+    }
+    for(int i=0;i<n;i++){
+        scanf("%d",&b[i]);
+        
+    }
+  
+    int sum[n];
+    for(int i=0;i<n;i++){
+        sum[i]=a[i]+b[i];   
+    printf("%d ", sum[i]);
+    }
+
+   
+}
