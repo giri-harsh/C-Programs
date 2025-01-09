@@ -9,4 +9,5 @@ int main(){
     float d_to_r = d*83.5 ;
     printf("\n Amount from Rs to Dollar is : %f",r_to_d);
     printf("\n Amount from Dollar to Rs is : %f",d_to_r); 
+    return 0;
 }
