@@ -1,0 +1,35 @@
+#include <stdio.h>
+void swap(int *a,int *b){
+    int temp = *a;
+    *a=*b;
+    *b=temp;
+}
+
+
+void selection (int arr[],int n){
+    for (int i=0;i<n-1;i++){
+            int si=i;        
+        for (int j=i+1;j<n;j++){
+            if (arr[j]<arr[si]){
+                si=j;
+            }
+        }
+        swap(&arr[i],&arr[si]);
+    }
+}
+
+
+int main(){
+    int n;
+    printf("Hola\n");
+    scanf("%d",&n);
+
+    int arr[n];
+    for (int i=0;i<n;i++)
+    scanf("%d",&arr[i]);
+    selection(arr,n);
+    for (int i=0;i<n;i++){
+        printf("%d ",arr[i]);
+    }
+
+}
